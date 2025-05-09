@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trainers | Fitness Pro Gym</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="trainers.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fitness Pro <span style="color: #ff4d00;">▮</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link active" href="trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+       
+  </header>
+
+  <hr class="section-divider" />
+
+  <!-- Trainers Section -->
+  <section id="trainers" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold text-uppercase">Meet Our Trainers</h2>
+      <div class="row g-4">
+        <!-- Trainer 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/trainer1.jpg" class="card-img-top" alt="Trainer 1">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between align-items-center">
+                John Doe
+                <span class="badge bg-expert"><i class="fas fa-dumbbell me-1"></i>Expert</span>
+              </h5>
+              <p class="card-text">A seasoned fitness expert with over 10 years of experience in strength training.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/trainer2.webp" class="card-img-top" alt="Trainer 2">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between align-items-center">
+                Jane Smith
+                <span class="badge bg-certified"><i class="fas fa-certificate me-1"></i>Certified</span>
+              </h5>
+              <p class="card-text">Certified yoga instructor specializing in flexibility and mindfulness.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/trainer3.png" class="card-img-top" alt="Trainer 3">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between align-items-center">
+                Mike Johnson
+                <span class="badge bg-toprated"><i class="fas fa-star me-1"></i>Top Rated</span>
+              </h5>
+              <p class="card-text">A high-energy trainer focused on HIIT and conditioning programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

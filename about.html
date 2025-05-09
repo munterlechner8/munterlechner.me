@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Fitness Pro Gym</title>
+
+  <!-- Bootstrap CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+
+  <!-- Fonts: Montserrat and Roboto (matches index.html style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="about.css" />
+
+  <style>
+    /* Header Brand Styling */
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .navbar-brand .bar {
+      color: #ff4d00;
+      font-size: 2rem;
+      margin-left: 5px;
+    }
+
+    /* Override Bootstrap navbar link colors */
+    .navbar-dark .navbar-nav .nav-link {
+      color: #eee;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link.active {
+      color: #ff4d00;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Styled Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          FITNESS PRO<span class="bar">▮</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">About Us</h2>
+
+      <div class="text-center mb-4">
+        <h3 class="text-primary">Our Core Programs</h3>
+      </div>
+
+      <!-- Service Cards Section -->
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-person-check display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Personal Training</h5>
+              <p class="card-text">One-on-one coaching tailored to your fitness goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-people display-4 text-success mb-3"></i>
+              <h5 class="card-title">Group Classes</h5>
+              <p class="card-text">High-energy workouts including bootcamps, HIIT, and yoga.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <i class="bi bi-heart-pulse display-4 text-danger mb-3"></i>
+              <h5 class="card-title">Nutrition Coaching</h5>
+              <p class="card-text">Custom meal plans and expert dietary guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-6 mb-4">
+          <h4 class="text-primary">Our Vision</h4>
+          <p>We believe fitness should be inclusive, enjoyable, and accessible to all. Our vision is to build a space where everyone can grow stronger—physically, mentally, and emotionally.</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h4 class="text-primary">Join Our Community</h4>
+          <p>Become part of something bigger. At Fitness Pro Gym, you're not just a member—you're family. Enjoy regular fitness challenges, social events, and ongoing support from a like-minded community.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p class="lead fw-semibold">Come visit us and discover how we can help transform your life—one workout at a time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    &copy; 2025 Fitness Pro Gym. All Rights Reserved.
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
