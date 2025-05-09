@@ -1,1 +1,1 @@
-# munterlechner.me
+# munterlechner.tech
