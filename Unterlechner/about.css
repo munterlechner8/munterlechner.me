@@ -1,0 +1,109 @@
+/* About Us Section */
+#about {
+    padding: 60px 0;
+    background-image: url('images/room3.jpg'); /* Add the background image again */
+    background-size: cover; /* Ensure the background image covers the section */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay for readability */
+  }
+  
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ff4d00; 
+    text-transform: uppercase;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+  }
+  
+  /* Service Cards */
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-body .display-4 {
+    font-size: 3.5rem; /* Increased icon size */
+  }
+  
+  .card-title {
+    font-size: 1.5rem; /* Increased font size from 1.25rem */
+    font-weight: 600;
+  }
+  
+  .card-text {
+    font-size: 1.2rem; /* Increased font size from 1rem */
+    color: #ccc;
+  }
+  
+  /* Text Colors */
+  .text-primary {
+    color: #ff4d00 !important; /* Change blue text to your brand color */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #111;
+    color: #aaa;
+    padding: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .section-title {
+      font-size: 2.5rem; /* Adjust size for mobile screens */
+    }
+  
+    .row {
+      text-align: center;
+    }
+  
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Full-Screen Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/room3.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the background cover the entire viewport */
+    background-position: center; /* Ensure the background is centered */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    height: 100vh; /* Make the body take up the full height of the viewport */
+    color: #fff;
+  }
+  
+  /* Container (adjusting for full-screen effect) */
+  .container {
+    padding: 60px 5%;
+    min-height: 100vh; /* Ensure the container takes up full screen height */
+  }
+  
+  /* Other styling as needed */
+  

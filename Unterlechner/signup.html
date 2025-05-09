@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Fitness Pro Gym</title>
+
+  <!-- Bootstrap + Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="signup.css" />
+
+  <style>
+    /* Your existing CSS */
+    /* (No change here for brevity, you can keep the CSS from your previous post) */
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          FITNESS PRO<span class="bar">▮</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="trainers.html">Trainers</a></li>
+            <li class="nav-item"><a class="nav-link active" href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <hr class="section-divider">
+
+  <!-- Signup Section -->
+  <section id="signup" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 display-4 fw-bold">Sign Up for Fitness Pro</h2>
+
+      <div class="row" id="form-section">
+        <div class="col-md-6 offset-md-3">
+          <form class="signup-form" onsubmit="return validateForm()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+              <label class="form-check-label" for="agreeTerms">I agree to the Terms & Conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Confirmation Message -->
+      <div class="row" id="confirmation-section" style="display: none;">
+        <div class="col-md-6 offset-md-3 text-center">
+          <h3 class="text-success">Thank you for signing up!</h3>
+          <p>We will contact you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript for form validation -->
+  <script>
+    function validateForm() {
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      const agreeTerms = document.getElementById('agreeTerms').checked;
+
+      // Check if all fields are filled
+      if (name === "" || email === "" || password === "" || confirmPassword === "") {
+        alert("Please fill in all fields.");
+        return false;
+      }
+
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return false;
+      }
+
+      // Check if terms are accepted
+      if (!agreeTerms) {
+        alert("You must agree to the terms and conditions.");
+        return false;
+      }
+
+      // Hide the form and show the confirmation message
+      document.getElementById('form-section').style.display = 'none';
+      document.getElementById('confirmation-section').style.display = 'block';
+
+      // Return false to prevent form submission (for testing purposes)
+      return false;
+    }
+  </script>
+
+</body>
+</html>

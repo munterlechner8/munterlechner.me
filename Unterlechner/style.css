@@ -1,0 +1,77 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #f1faee;
+    min-height: 100vh;
+  }
+  
+  /* Header and Navbar */
+  .navbar-brand {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    color: #e63946 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .nav-link:hover,
+  .nav-link.active {
+    color: #e63946 !important;
+  }
+  
+  /* Program Cards */
+  .program-card {
+    border: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  .program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Images Zoom */
+  .img-hover-zoom {
+    transition: transform 0.5s ease;
+  }
+  .img-hover-zoom:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Section */
+  #programs {
+    background: linear-gradient(135deg, #1d3557, #000000);
+    padding: 60px 0;
+  }
+  
+  /* Headings */
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #e63946;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 0.9rem;
+    background-color: #000;
+    color: #f1faee;
+  }
+  
+  /* Smooth Scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  

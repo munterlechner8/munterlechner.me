@@ -1,0 +1,166 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #111;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo .bar {
+    color: #ff4d00;
+    font-size: 2.2rem;
+    margin-left: 5px;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #ff4d00;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('images/gym2.jpg'); /* Replace with actual path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 0 5%;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #ff4d00;
+}
+
+.btn-orange {
+    background-color: #ff4d00;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e64400;
+}
+
+/* New Button Style for Become A Member */
+.btn-member {
+    background-color: #ff4d00;  /* Button color */
+    color: #fff;  /* Text color */
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn-member:hover {
+    background-color: #e64400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .btn-orange {
+        padding: 10px 20px;
+    }
+
+    .btn-member {
+        padding: 10px 20px;
+    }
+}
